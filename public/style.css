@@ -556,7 +556,6 @@ hr {
   }
 }
 
-
 /* nav view */
 nav {
   margin: 27px auto 0;
@@ -628,7 +627,6 @@ a:nth-child(4):hover ~ .animation {
 }
 
 /* nav view */
-
 
 /* user-nav */
 .inset {
@@ -732,4 +730,6 @@ p.user-Img {
 
 /* ***    forms css ****  */
 
-
+.plants-list {
+  text-align: center;
+}
