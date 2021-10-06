@@ -667,12 +667,11 @@ p.user-Img {
   background-color: #34caca;
 }
 
-/* ***    forms css ****  */
+/* css new additions */
 
 .plants-list {
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
   gap: 10px;
 }
 
@@ -682,11 +681,19 @@ p.user-Img {
   align-items: center;
 }
 
-/* css refactor */
+.item {
+  width: 75px;
+  height: 75px;
+  padding: 100px;
+  margin: 20px;
+}
 
 .heading {
   text-align: center;
   font-size: 60px;
-  font-style: italic;
   color: rgb(77, 206, 77);
+}
+
+.italic {
+  font-style: italic;
 }

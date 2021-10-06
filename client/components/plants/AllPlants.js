@@ -82,7 +82,7 @@ export class Plants extends React.Component {
         </div>
         <div className="plants-list">
           {plants.map(plant => (
-            <div key={plant.id}>
+            <div key={plant.id} className="item">
               <Link to={`/plants/${plant.id}`}>
                 <div>
                   <h1>{plant.name}</h1>
