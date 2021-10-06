@@ -3,10 +3,12 @@ html {
 }
 body {
   font-family: sans-serif;
+  background: rgb(242, 252, 242);
 }
 
 a {
   text-decoration: none;
+  color: rgb(77, 206, 77);
 }
 
 label {
@@ -21,13 +23,18 @@ form div {
 .cart-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
   color: #555b6e;
 }
 
 .cart-page .item {
-  display: flex;
-  flex-direction: column;
+  margin-right: 100px;
+}
+
+.checkout {
+  text-align: center;
 }
 
 .cart-page .item-details {
@@ -57,16 +64,7 @@ form div {
 }
 
 .cart-page .order-summary {
-  flex: 1;
-  flex-direction: column;
-  display: flex;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  color: #555b6e;
-  transition: flex 0.4s ease;
-  position: relative;
-  z-index: 2;
+  text-align: center;
 }
 
 .cart-page .button-input {
@@ -120,8 +118,10 @@ form div {
 }
 
 .checkout-page {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+  margin-left: 200px;
   height: 100vh;
   color: #555b6e;
   margin-top: 2%;
@@ -349,7 +349,7 @@ a:nth-child(4) {
 }
 
 nav .start-home,
-a:nth-child(1):hover ~ .animation {
+a:nth-child:hover ~ .animation {
   width: 130px;
   left: 0;
   background-color: #1abc9c;
@@ -358,50 +358,24 @@ nav .start-about,
 a:nth-child(2):hover ~ .animation {
   width: 130px;
   left: 130px;
-  background-color: #e74c3c;
+  background-color: #1abc9c;
 }
 nav .start-blog,
 a:nth-child(3):hover ~ .animation {
   width: 130px;
   left: 260px;
-  background-color: #3498db;
+  background-color: #1abc9c;
 }
 nav .start-portefolio,
 a:nth-child(4):hover ~ .animation {
   width: 130px;
   left: 390px;
-  background-color: #9b59b6;
+  background-color: #1abc9c;
 }
 
 /* nav view */
 
 /* =============================== LogIn SighIn =============================== */
-
-body {
-  background: rgba(47, 100, 90, 1);
-  background: -moz-linear-gradient(
-    left,
-    rgba(47, 100, 90, 1) 0%,
-    rgba(111, 161, 123, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    right top,
-    color-stop(0%, rgba(47, 100, 90, 1)),
-    color-stop(100%, rgba(111, 161, 123, 1))
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgba(47, 100, 90, 1) 0%,
-    rgba(111, 161, 123, 1) 100%
-  );
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'quicksand';
-}
 
 hr {
   border: 0;
@@ -415,48 +389,31 @@ hr {
   );
 }
 
-.login {
+.login,
+.sign-up {
   opacity: 1;
   visibility: visible;
   position: absolute;
   z-index: 1000;
   top: 50%;
   left: 50%;
-  margin-top: -230px;
+  margin-top: -110px;
   margin-left: -210px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.3);
   height: 440px;
   width: 400px;
-  color: white;
+  color: #1abc9c;
   text-align: center;
-  border-radius: 2px;
-  -webkit-box-shadow: 10px 10px 15px -6px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  -webkit-box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.25);
   transition: opacity 0.3s ease-in 0.3s, visibility 0.3s ease-in 0.3s;
   transform: scale(0.9);
 }
 
 .sign-up {
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
-  z-index: 2000;
-  top: 55%;
-  left: 50%;
-  margin-top: -330px;
-  margin-left: -210px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.3);
   height: 640px;
-  width: 400px;
-  color: white;
-  text-align: center;
-  border-radius: 2px;
-  -webkit-box-shadow: 10px 10px 15px -6px rgba(0, 0, 0, 0.25);
-  transition: opacity 0.3s ease-in 0.3s, visibility 0.3s ease-in 0.3s;
-  transform: scale(0.9);
 }
 
 .field {
@@ -607,24 +564,6 @@ a:nth-child(1):hover ~ .animation {
   left: 0;
   background-color: #1abc9c;
 }
-nav .start-about,
-a:nth-child(2):hover ~ .animation {
-  width: 130px;
-  left: 130px;
-  background-color: #e74c3c;
-}
-nav .start-blog,
-a:nth-child(3):hover ~ .animation {
-  width: 130px;
-  left: 260px;
-  background-color: #3498db;
-}
-nav .start-portefolio,
-a:nth-child(4):hover ~ .animation {
-  width: 130px;
-  left: 390px;
-  background-color: #9b59b6;
-}
 
 /* nav view */
 
@@ -731,5 +670,23 @@ p.user-Img {
 /* ***    forms css ****  */
 
 .plants-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  gap: 10px;
+}
+
+.plants-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* css refactor */
+
+.heading {
   text-align: center;
+  font-size: 60px;
+  font-style: italic;
+  color: rgb(77, 206, 77);
 }

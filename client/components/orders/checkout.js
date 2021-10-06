@@ -14,8 +14,9 @@ export const CheckoutPage = props => {
 
   return (
     <div className="checkout-page">
-      <div>
+      <div className="separate">
         <Link to="/plants">Continue Shopping</Link>
+        <br />
         <br />
         <Link to="/cart">Back to My Cart</Link>
       </div>

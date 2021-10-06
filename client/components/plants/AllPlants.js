@@ -46,8 +46,8 @@ export class Plants extends React.Component {
     const {plants, isAdmin, isLoggedIn} = this.props
 
     return (
-      <div className="plants-list">
-        <div>
+      <div>
+        <div className="plants-heading">
           {isAdmin && isLoggedIn && <Link to="/addplant">Add plant</Link>}
           <label>
             Condition:
@@ -80,27 +80,29 @@ export class Plants extends React.Component {
             </select>
           </label>
         </div>
-        {plants.map(plant => (
-          <div key={plant.id}>
-            <Link to={`/plants/${plant.id}`}>
-              <div>
-                <h1>{plant.name}</h1>
-                <img src={plant.imageUrl} height="175" width="175" />
-              </div>
-            </Link>
-            {isAdmin &&
-              isLoggedIn && (
-                <Link to="/plants">
-                  <button
-                    type="button"
-                    onClick={() => this.props.removePlant(plant.id)}
-                  >
-                    Remove Plant
-                  </button>
-                </Link>
-              )}
-          </div>
-        ))}
+        <div className="plants-list">
+          {plants.map(plant => (
+            <div key={plant.id}>
+              <Link to={`/plants/${plant.id}`}>
+                <div>
+                  <h1>{plant.name}</h1>
+                  <img src={plant.imageUrl} height="175" width="175" />
+                </div>
+              </Link>
+              {isAdmin &&
+                isLoggedIn && (
+                  <Link to="/plants">
+                    <button
+                      type="button"
+                      onClick={() => this.props.removePlant(plant.id)}
+                    >
+                      Remove Plant
+                    </button>
+                  </Link>
+                )}
+            </div>
+          ))}
+        </div>
       </div>
     )
   }

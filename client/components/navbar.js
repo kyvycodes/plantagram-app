@@ -9,7 +9,7 @@ class Navbar extends React.Component {
     const {handleClick, isLoggedIn, isAdmin, User} = this.props // will use isAdmin and User for displaying
     return (
       <div>
-        <h1>Plantagram</h1>
+        <h1 className="heading">🌿🍀🌳Plantagram🌴🌵🌱</h1>
         <nav>
           {isLoggedIn ? (
             <div>
