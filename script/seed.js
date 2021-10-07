@@ -146,7 +146,7 @@ async function seed() {
     season: 'Summer'
   })
   const plant14 = await Plant.create({
-    name: 'Succulent',
+    name: 'Buy 1 Get 3',
     price: 2800,
     description: 'indoor dry plant',
     imageUrl:

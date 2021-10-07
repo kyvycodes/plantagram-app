@@ -682,10 +682,10 @@ p.user-Img {
 }
 
 .item {
-  width: 75px;
-  height: 75px;
-  padding: 100px;
-  margin: 20px;
+  width: 200px;
+  height: 100px;
+  padding: 50px;
+  margin: 30px;
 }
 
 .heading {

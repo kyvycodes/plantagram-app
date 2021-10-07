@@ -85,7 +85,7 @@ export class Plants extends React.Component {
             <div key={plant.id} className="item">
               <Link to={`/plants/${plant.id}`}>
                 <div>
-                  <h1>{plant.name}</h1>
+                  <h1 className="plant-name">{plant.name}</h1>
                   <img src={plant.imageUrl} height="175" width="175" />
                 </div>
               </Link>
