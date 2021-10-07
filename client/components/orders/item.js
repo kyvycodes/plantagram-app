@@ -30,7 +30,7 @@ export class Item extends React.Component {
     const {plantQuantity, plantSubtotal} = plant.plant_order
 
     return (
-      <div className="item">
+      <div className="item_plant">
         <div className="item-details overlay">
           <div className="plant-details">
             <h2>{name}</h2>
