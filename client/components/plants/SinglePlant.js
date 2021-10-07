@@ -65,7 +65,7 @@ export class Plant extends React.Component {
     const {plant, isAdmin, isLoggedIn} = this.props
 
     return (
-      <div className="plant">
+      <div className="single-plant">
         {isAdmin &&
           isLoggedIn && (
             <Link to={`/updateplant/${plant.id}`}>Update plant</Link>
@@ -79,7 +79,7 @@ export class Plant extends React.Component {
           <p>Condition: {plant.livingCondition}</p>
           <p>Season: {plant.season}</p>
         </div>
-        <div style={{backgroundColor: 'lightblue'}}>
+        <div>
           <p>Price: {this.getPrice(plant.price)} </p>
           <p>Current Stock: {plant.stock}</p>
           <form onSubmit={this.handleSubmit}>
