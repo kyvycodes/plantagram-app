@@ -672,7 +672,7 @@ p.user-Img {
 .plants-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 10px;
 }
 
@@ -683,8 +683,9 @@ p.user-Img {
 }
 
 .item {
-  padding: 50px;
-  margin: 20px;
+  /* width: 75px; */
+  padding: 10px;
+  margin: 10px;
 }
 
 .heading {
