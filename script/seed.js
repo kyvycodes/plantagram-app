@@ -145,16 +145,16 @@ async function seed() {
     livingConditions: 'outdoor',
     season: 'Summer'
   })
-  // const plant14 = await Plant.create({
-  //   name: 'Aloe',
-  //   price: 2800,
-  //   description: 'indoor dry plant',
-  //   imageUrl:
-  //     'https://images.unsplash.com/photo-1556408978-4d89b27624bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60',
-  //   stock: 10,
-  //   livingConditions: 'shade',
-  //   season: 'Spring'
-  // })
+  const plant14 = await Plant.create({
+    name: 'Succulent',
+    price: 2800,
+    description: 'indoor dry plant',
+    imageUrl:
+      'https://images.unsplash.com/photo-1556408978-4d89b27624bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60',
+    stock: 10,
+    livingConditions: 'shade',
+    season: 'Spring'
+  })
   const plant15 = await Plant.create({
     name: 'Cactus',
     price: 2900,
